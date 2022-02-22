@@ -1,38 +1,40 @@
-.App {
+.container-layout {
+  padding-top: 100px;
+  background-color: hsl(185, 75%, 39%);
+  height: 100vh;
+  position: relative;
+  background-image: url("./assets/images/bg-pattern-top.svg"),
+    url("./assets/images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: -53% 170%, 128% -114%;
+}
+
+.attribution {
+  font-size: 11px;
+  margin-top: 80px;
   text-align: center;
+  color: hsl(193, 38%, 86%);
+}
+.attribution a {
+  color: hsl(193, 38%, 86%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-pattern-bottom {
+  position: absolute;
+  bottom: -525px;
+  right: -180px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-pattern-top {
+  position: absolute;
+  top: -513px;
+  left: -295px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 426px) {
+  .container-layout {
+    padding-left: 16px;
+    padding-right: 16px;
+    background-position: 119% 149%, 16% -120%;
   }
 }

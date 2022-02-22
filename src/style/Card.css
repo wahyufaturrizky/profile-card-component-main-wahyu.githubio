@@ -1,0 +1,43 @@
+.container-card {
+  margin: auto;
+  border-radius: 16px;
+  background-color: white;
+  width: 350px;
+  position: relative;
+}
+
+.container-card-content {
+  border-radius: 16px;
+  background-image: url("../assets/images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.avatar-picture {
+  border-radius: 100%;
+  border: 4px solid white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 197px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-footer-card {
+  padding: 24px;
+  margin-top: 24px;
+  border-top: 1px solid hsl(0, 0%, 59%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 426px) {
+  .container-card {
+    width: auto;
+  }
+}
